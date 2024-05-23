@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #7AB2B2;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+main {
+    padding: 2rem 1rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+
+.intro h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.team {
+    margin-bottom: 3rem;
+}
+
+.team h3 {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    background-color: #e5d5f8;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.team .member {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px #A0DEFF;
+    text-align: center;
+    margin: 1rem;
+    flex: 1 0 21%;
+    max-width: 250px;
+}
+
+.team .member img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.team .member h4 {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.team .member p {
+    margin: 0;
+    color: #777;
+    padding-bottom: 1rem;
+}
+
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+@media (max-width: 768px) {
+    .team .member {
+        flex: 1 0 100%;
+        max-width: 300px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .team .member {
+        flex: 1 0 45%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .team .member {
+        flex: 1 0 21%;
+    }
+}
